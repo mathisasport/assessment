@@ -7,3 +7,5 @@
 <p>1 student completes a 1 question multiple choice test.</p>
 <p>remove old accounts. send in grades. add new accounts. phil mtg.</p>
 <p>radio button display. (Multi-select?) submit button. score.</p>
+<p>need crud - > ifur </p>
+<p> put in a question, which should be of the form  answer: 'a'</p>
