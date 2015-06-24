@@ -8,4 +8,5 @@
 <p>remove old accounts. send in grades. add new accounts. phil mtg.</p>
 <p>radio button display. (Multi-select?) submit button. score.</p>
 <p>need crud - > ifur </p>
-<p> put in a question, which should be of the form  answer: 'a'</p>
+<p>don't really need a question collection.  For now just a test collection, with an array of values, a-e</p>
+<p> put in a question, which should be of the form  answer: 'a' (or b, c, d, or e)</p>
