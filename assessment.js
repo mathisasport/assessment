@@ -1,4 +1,5 @@
 Questions = new Mongo.Collection('questions');
+StudentResponses = new Mongo.Collection('student_responses');
 
 if (Meteor.isClient) {
   // counter starts at 0
@@ -12,6 +13,9 @@ if (Meteor.isClient) {
   Template.multiple_choice.helpers({
       number: function(){
 	  return this.number;
+      },
+      question_id: function(){
+	  return this._id;
       }
   });
   Template.hello.helpers({
@@ -20,12 +24,17 @@ if (Meteor.isClient) {
     }
   });
 
-  Template.hello.events({
-    'click button': function () {
+  Template.body.events({
+    'click button': function() {
+      Session.set('counter', Session.get('counter') + 1);	
+    }  
+  });  
+//  Template.hello.events({
+//    'click button': function () {
       // increment the counter when button is clicked
-      Session.set('counter', Session.get('counter') + 1);
-    }
-  });
+//      Session.set('counter', Session.get('counter') + 1);
+//    }
+//  });
 }
 
 if (Meteor.isServer) {

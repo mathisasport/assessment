@@ -8,7 +8,7 @@
 <li>done. new collection: student_responses</li>
 <li>done. each radio button line should contain _id of question, rather than number.</li>
 <li>back out number? number associated with a question doesn't make sense anymore. Instead, number makes sense as part of a set of questions in a test. revisit this when doing IFUR creation of tests in the client interface.</li>
-<li>button (I'm finished. Record and score my answers.)</li>
+<li>done. button (I'm finished. Record and score my answers.)</li>
 <li>compare response to correct answer</li>
 <li>insert student_response: student_id, question_id, response, correct answer, score</li>
 </ul>

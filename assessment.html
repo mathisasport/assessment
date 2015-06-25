@@ -9,17 +9,19 @@
   {{> multiple_choice}}
 {{/each}}
 </ol>
+<button>Record my Answers</button>
+
 {{> hello}}
 </body>
 
 
 <template name='multiple_choice'>
 <li>
-  <input type='radio' name='{{number}}' value='A'>A
-  <input type='radio' name='{{number}}' value='B'>B
-  <input type='radio' name='{{number}}' value='C'>C
-  <input type='radio' name='{{number}}' value='D'>D
-  <input type='radio' name='{{number}}' value='E'>E
+  <input type='radio' name='{{question_id}}' value='a'>A
+  <input type='radio' name='{{question_id}}' value='b'>B
+  <input type='radio' name='{{question_id}}' value='c'>C
+  <input type='radio' name='{{question_id}}' value='d'>D
+  <input type='radio' name='{{question_id}}' value='e'>E
 </li>
 </template>
 
