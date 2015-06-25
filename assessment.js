@@ -6,10 +6,14 @@ if (Meteor.isClient) {
 
   Template.body.helpers({
       questions: function(){
-	  return Questions.find({});
-      }	  
+	  return Questions.find({},{sort: {number:-1}});
+      }
   });  
-
+  Template.multiple_choice.helpers({
+      number: function(){
+	  return this.number;
+      }
+  });
   Template.hello.helpers({
     counter: function () {
       return Session.get('counter');
