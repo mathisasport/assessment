@@ -18,23 +18,17 @@ if (Meteor.isClient) {
 	  return this._id;
       }
   });
-  Template.hello.helpers({
+  Template.submit_answers.helpers({
     counter: function () {
       return Session.get('counter');
     }
   });
 
-  Template.body.events({
+  Template.submit_answers.events({
     'click button': function() {
       Session.set('counter', Session.get('counter') + 1);	
     }  
   });  
-//  Template.hello.events({
-//    'click button': function () {
-      // increment the counter when button is clicked
-//      Session.set('counter', Session.get('counter') + 1);
-//    }
-//  });
 }
 
 if (Meteor.isServer) {
