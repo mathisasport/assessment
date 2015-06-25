@@ -1,4 +1,4 @@
-Tests = new Mongo.Collection('tests');
+Questions = new Mongo.Collection('questions');
 
 if (Meteor.isClient) {
   // counter starts at 0

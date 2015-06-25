@@ -3,10 +3,19 @@
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
-
-  {{> hello}}
+  <h1>Assessment</h1>
+{{> multiple_choice}}
+{{> hello}}
 </body>
+
+
+<template name='multiple_choice'>
+<input type='radio' name='multiple_choice' value='A'>A
+<input type='radio' name='multiple_choice' value='B'>B
+<input type='radio' name='multiple_choice' value='C'>C
+<input type='radio' name='multiple_choice' value='D'>D
+<input type='radio' name='multiple_choice' value='E'>E
+</template>
 
 <template name="hello">
   <button>Click Me</button>
