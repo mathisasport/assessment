@@ -4,6 +4,12 @@ if (Meteor.isClient) {
   // counter starts at 0
   Session.setDefault('counter', 0);
 
+  Template.body.helpers({
+      questions: function(){
+	  return Questions.find({});
+      }	  
+  });  
+
   Template.hello.helpers({
     counter: function () {
       return Session.get('counter');
